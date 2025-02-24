@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import { createRootRoute, Outlet } from "@tanstack/react-router";
+import Navbar from "../components/Navbar";
 
 export const Route = createRootRoute({
   component: Layout,
@@ -8,9 +9,7 @@ export const Route = createRootRoute({
 function Layout() {
   return (
     <div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
-      <header className="w-full p-4 text-xl text-center bg-black text-gray-100">
-        <h1>BomSLap - React</h1>
-      </header>
+      <Navbar />
 
       <main className="p-2">
         <Outlet />
